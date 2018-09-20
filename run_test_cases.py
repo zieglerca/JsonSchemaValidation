@@ -16,8 +16,10 @@ for tc in ['testcase1.json', 'testcase2.json']:
         data = json.load(df)
 
     # validate test case
-    #try:
+    try:
         validate(data, schema)
-    #except Exception as e:
-    #    print(e)
-    #print("successfully completed: {tc}")
+    except Exception as e:
+        print("completed with error: {tc}")
+        print(e)
+    else:
+        print("completed successfully: {tc}")

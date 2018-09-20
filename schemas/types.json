@@ -6,10 +6,10 @@
   "definitions": {
     "Revision": {
       "type": "string",
-      "title": "any title",
-      "description": "any description",
+      "title": "Revision Type",
+      "description": "The revision type is a technical name for a revision",
       "minLength": 5,
-      "maxLength": 4 },
+      "maxLength": 40 },
     "SemanticVersion": {
       "type": "string",
       "pattern": "^[0-9]{5}.[0-9]{5}.[0-9]{5}$"},
