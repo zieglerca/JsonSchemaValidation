@@ -1,0 +1,14 @@
+{
+  "Type": "RuleServiceVersion",
+  "Version": {
+    "Revision": "00000.00000.00001",
+    "Description": "Some test data",
+    "ChangedOn": "2017-12-24T21:59:43.10Z",
+    "ChangedBy": "ZIEGLERCA",
+    "Id": "00000000000000000000000000000000" },
+  "Project": [{
+    "Id": "00000000000000000000000000000000",
+    "Name": "PROJECT",
+    "Project": "00000000000000000000000000000000" }]
+
+}

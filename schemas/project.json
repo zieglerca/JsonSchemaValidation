@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Schema for project",
+  "definitions": {
+    "Project": {
+      "type": "object",
+      "properties": {
+        "allOf": [  {"$ref": "types.json#/definitions/Id"},
+                    {"$ref": "types.json#/definitions/Description"},
+                    {"$ref": "types.json#/definitions/Name"},
+                    {"$ref": "types.json#/definitions/ChangedOn"},
+                    {"$ref": "types.json#/definitions/ChangedBy"}],
+        "required": ["Id", "Name", "ChangedOn", "ChangedBy"]}
+    }
+  }
+}

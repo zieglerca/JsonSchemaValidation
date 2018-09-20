@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Schema for erm document",
+  "type": "object",
+  "properties": {
+    "Type": {
+      "$ref": "file://C:/Users/d034314/PycharmProjects/JsonSchemaValidation/schemas/types.json#/definitions/Type"},
+    "Version": {
+      "$ref": "file://C:/Users/d034314/PycharmProjects/JsonSchemaValidation/schemas/types.json#/definitions/Version"},
+    "Project": {
+      "type": "array",
+      "items": {
+        "$ref": "file://C:/Users/d034314/PycharmProjects/JsonSchemaValidation/schemas/project.json#/definitions/Project"}
+    }
+  },
+  "required": ["Type", "Version", "Project"]
+}
