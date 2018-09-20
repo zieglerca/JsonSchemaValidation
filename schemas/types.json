@@ -1,6 +1,8 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "https://raw.githubusercontent.com/zieglerca/JsonSchemaValidation/master/schemas/types.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Schema for generic types",
+  "description": "Various generic types used in ERM",
   "definitions": {
     "Revision": {
       "type": "string",
@@ -15,10 +17,11 @@
       "type": "string",
       "maxLength": 255 },
     "Type": {
-      "type": {"enum": [ "RuleServiceVersion", "ProjectVersion"] }},
+      "type": "string",
+      "enum": [ "RuleServiceVersion", "ProjectVersion"] },
     "Id": {
       "type": "string",
-      "pattern": "^[A-F0-9]{32}$"}},
+      "pattern": "^[A-F0-9]{32}$"},
     "Name": {
       "type": "string",
       "minLength": 30,
@@ -32,13 +35,14 @@
     "Version": {
       "type": "object",
       "properties": {
-        "allOf": [  {"$ref": "file://C:/Users/d034314/PycharmProjects/JsonSchemaValidation/schemas/types.json#/definitions/Revision"},
-                    {"$ref": "file://C:/Users/d034314/PycharmProjects/JsonSchemaValidation/schemas/types.json#/definitions/SemanticVersion"},
-                    {"$ref": "file://C:/Users/d034314/PycharmProjects/JsonSchemaValidation/schemas/types.json#/definitions/Description"},
-                    {"$ref": "file://C:/Users/d034314/PycharmProjects/JsonSchemaValidation/schemas/types.json#/definitions/Id"},
-                    {"$ref": "file://C:/Users/d034314/PycharmProjects/JsonSchemaValidation/schemas/types.json#/definitions/ChangedOn"},
-                    {"$ref": "file://C:/Users/d034314/PycharmProjects/JsonSchemaValidation/schemas/types.json#/definitions/ChangedBy"}],
-        "required": ["Revision", "Id", "SemanticVersion", "ChangedOn", "ChangedBy"]
-      }
+        "Revision" : {"$ref": "#/definitions/Revision"},
+        "SemanticVersion" : {"$ref": "#/definitions/SemanticVersion"},
+        "Description" : {"$ref": "#/definitions/Description"},
+        "Id" : {"$ref": "#/definitions/Id"},
+        "ChangedOn" : {"$ref": "#/definitions/ChangedOn"},
+        "ChangedBy" : {"$ref": "#/definitions/ChangedBy"}
+      },
+      "required": ["Revision", "Id", "SemanticVersion", "ChangedOn", "ChangedBy"]
     }
+  }
 }
