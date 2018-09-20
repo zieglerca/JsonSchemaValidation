@@ -12,7 +12,7 @@
         "ChangedBy" : {"$ref": "types.json#/definitions/ChangedBy"},
         "Name" : {"$ref": "types.json#/definitions/Name"}
       },
-      "required": ["Id", "Name", "ChangedOn", "ChangedBy"],
+      "required": ["Id", "Name", "ChangedOn", "ChangedBy"]
     }
   }
 }

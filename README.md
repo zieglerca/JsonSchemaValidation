@@ -5,7 +5,8 @@ payloads with JSON Schema Validation.
 **Resources**
 1. [Online Validator](https://www.jsonschemavalidator.net/)
 2. [JSON Schema Project (incl. Docu)]( https://json-schema.org/)
-3. [Python Validator](https://github.com/Julian/jsonschema)
-4. [Training](https://json-schema.org/understanding-json-schema/index.html)
+3. [Python validator documentation](https://python-jsonschema.readthedocs.io/en/latest/#)
+4. [Python Validator](https://github.com/Julian/jsonschema)
+5. [Training](https://json-schema.org/understanding-json-schema/index.html)
 
 [Original repository](https://github.com/zieglerca/JsonSchemaValidation)
