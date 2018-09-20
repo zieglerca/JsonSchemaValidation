@@ -6,12 +6,14 @@
     "Project": {
       "type": "object",
       "properties": {
-        "allOf": [  {"$ref": "types.json#/definitions/Id"},
-                    {"$ref": "types.json#/definitions/Description"},
-                    {"$ref": "types.json#/definitions/Name"},
-                    {"$ref": "types.json#/definitions/ChangedOn"},
-                    {"$ref": "types.json#/definitions/ChangedBy"}],
-        "required": ["Id", "Name", "ChangedOn", "ChangedBy"]}
+        "Id" : {"$ref": "types.json#/definitions/Id"},
+        "Description" : {"$ref": "types.json#/definitions/Description"},
+        "ChangedOn" : {"$ref": "types.json#/definitions/ChangedOn"},
+        "ChangedBy" : {"$ref": "types.json#/definitions/ChangedBy"},
+        "Name" : {"$ref": "types.json#/definitions/Name"}
+      },
+      "required": ["Id", "Name", "ChangedOn", "ChangedBy"],
     }
   }
 }
+
