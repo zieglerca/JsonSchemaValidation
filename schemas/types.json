@@ -24,7 +24,7 @@
       "pattern": "^[A-F0-9]{32}$"},
     "Name": {
       "type": "string",
-      "minLength": 30,
+      "minLength": 3,
       "maxLength": 30 },
     "ChangedOn": {
       "type": "string",

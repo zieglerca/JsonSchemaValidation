@@ -1,7 +1,8 @@
 {
   "Type": "RuleServiceVersion",
   "Version": {
-    "Revision": "00000.00000.00001",
+    "Revision": "MyNewVersion",
+    "SemanticVersion": "00000.00000.00001",
     "Description": "Some test data",
     "ChangedOn": "2017-12-24T21:59:43.10Z",
     "ChangedBy": "ZIEGLERCA",
