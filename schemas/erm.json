@@ -5,13 +5,13 @@
   "type": "object",
   "properties": {
     "Type": {
-      "$ref": "types.json#/definitions/Type"},
+      "$ref": "https://raw.githubusercontent.com/zieglerca/JsonSchemaValidation/master/schemas/types.json#/definitions/Type"},
     "Version": {
-      "$ref": "types.json#/definitions/Version"},
+      "$ref": "https://raw.githubusercontent.com/zieglerca/JsonSchemaValidation/master/schemas/types.json#/definitions/Version"},
     "Project": {
       "type": "array",
       "items": {
-        "$ref": "project.json#/definitions/Project"}
+        "$ref": "https://raw.githubusercontent.com/zieglerca/JsonSchemaValidation/master/schemas/project.json#/definitions/Project"}
     }
   },
   "required": ["Type", "Version", "Project"]
