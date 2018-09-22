@@ -6,11 +6,11 @@
     "Project": {
       "type": "object",
       "properties": {
-        "Id" : {"$ref": "https://raw.githubusercontent.com/zieglerca/JsonSchemaValidation/master/schemas/types.json#/definitions/Id"},
-        "Description" : {"$ref": "https://raw.githubusercontent.com/zieglerca/JsonSchemaValidation/master/schemas/types.json#/definitions/Description"},
-        "ChangedOn" : {"$ref": "https://raw.githubusercontent.com/zieglerca/JsonSchemaValidation/master/schemas/types.json#/definitions/ChangedOn"},
-        "ChangedBy" : {"$ref": "https://raw.githubusercontent.com/zieglerca/JsonSchemaValidation/master/schemas/types.json#/definitions/ChangedBy"},
-        "Name" : {"$ref": "https://raw.githubusercontent.com/zieglerca/JsonSchemaValidation/master/schemas/types.json#/definitions/Name"}
+        "Id" : {"$ref": "types.json#/definitions/Id"},
+        "Description" : {"$ref": "types.json#/definitions/Description"},
+        "ChangedOn" : {"$ref": "types.json#/definitions/ChangedOn"},
+        "ChangedBy" : {"$ref": "types.json#/definitions/ChangedBy"},
+        "Name" : {"$ref": "types.json#/definitions/Name"}
       },
       "required": ["Id", "Name", "ChangedOn", "ChangedBy"]
     }

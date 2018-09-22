@@ -1,14 +1,16 @@
 {
   "Type": "RuleServiceVersion",
   "Version": {
-    "TODORevision": "00000.00000.00001",
+    "Revision": "MyNewVersion_Error_Case",
+    "SemanticVersion": "a.b.c",
     "Description": "Some test data",
-    "ChangedOn": "2017-12-24T21:59:43.10Z",
+    "ChangedOn": "2017-12-24T21:59:43.10",
     "ChangedBy": "ZIEGLERCA",
-    "Id": "00000000000000000000000000000000" },
+    "Id": "0000000000000000000000000000000Z" },
   "Project": [{
     "Id": "00000000000000000000000000000000",
     "Name": "PROJECT",
+    "ChangedOn": "2017-12-24T21:59:43.10Z",
+    "ChangedBy": "ZIEGLERCA",
     "Project": "00000000000000000000000000000000" }]
-
 }
